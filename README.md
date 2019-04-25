@@ -47,8 +47,8 @@ docker run -d \
 --cap-add sys_admin \
 --cap-add sys_ptrace \
 -e PID={PID} \
--e FILE={FILE}
--v /LOCAL/PATH:/strace/output:rw
+-e FILE={FILE} \
+-v /LOCAL/PATH:/strace/output:rw \
 strace
 ```
 - Replace {NAME} with the name of the Container you are monitoring.
